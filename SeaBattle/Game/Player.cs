@@ -69,6 +69,34 @@ namespace Sea_Battle
                 }
         }
 
+        public int[] findPoints()
+        {
+            State[,] field = new State[12, 12];
+            for (int i = 0; i < n + 2; i++)
+                for (int j = 0; j < n + 2; j++)
+                {
+                    if (i == 0 || i == 11 || j == 0 || j == 11)
+                    {
+                        field[i, j] = State.empty;
+                    }
+                    else
+                    {
+                        field[i, j] = hiddenField[i - 1, j - 1];
+                    }
+                }
+            for (int i = 1; i < n + 1; i++)
+                for (int j = 1; j < n + 1; j++)
+                {
+                    if (hiddenField[i - 1, j - 1] == State.empty)
+                        if (field[i + 1, j].Equals(State.hurt) || field[i - 1, j].Equals(State.hurt) || field[i, j + 1].Equals(State.hurt) ||
+                            field[i, j - 1].Equals(State.hurt))
+                        {
+                            return new int[2] { i - 1, j - 1 };
+                        }
+                }
+            return null;
+        }
+
         public void toFreeSpaceReal()
         {
             State[,] field = new State[12, 12];

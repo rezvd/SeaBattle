@@ -90,3 +90,26 @@ C:\Users\1\source\repos\7bits\Sea battle(2)\obj\x86\Debug\Курсовая.cspro
 C:\Users\1\source\repos\7bits\Sea battle(2)\obj\x86\Debug\Курсовая.csproj.CopyComplete
 C:\Users\1\source\repos\7bits\Sea battle(2)\obj\x86\Debug\Курсовая.exe
 C:\Users\1\source\repos\7bits\Sea battle(2)\obj\x86\Debug\Курсовая.pdb
+C:\Users\1\source\repos\7bits\SeaBattle\obj\x86\Debug\Курсовая.exe
+C:\Users\1\source\repos\7bits\SeaBattle\obj\x86\Debug\Курсовая.pdb
+C:\Users\1\source\repos\7bits\SeaBattle\obj\x86\Debug\Курсовая.csprojAssemblyReference.cache
+C:\Users\1\source\repos\7bits\SeaBattle\obj\x86\Debug\Sea_Battle.Form1.resources
+C:\Users\1\source\repos\7bits\SeaBattle\obj\x86\Debug\Sea_Battle.Properties.Resources.resources
+C:\Users\1\source\repos\7bits\SeaBattle\obj\x86\Debug\Курсовая.csproj.GenerateResource.cache
+C:\Users\1\source\repos\7bits\SeaBattle\obj\x86\Debug\Курсовая.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\Курсовая.exe.config
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\Курсовая.exe
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\Курсовая.pdb
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\Castle.Core.dll
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\Moq.dll
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\nunit.framework.dll
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\System.ValueTuple.dll
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\Castle.Core.xml
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\Moq.pdb
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\Moq.xml
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\nunit.framework.pdb
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\nunit.framework.xml
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\1\source\repos\7bits\SeaBattle\bin\Debug\System.ValueTuple.xml
+C:\Users\1\source\repos\7bits\SeaBattle\obj\x86\Debug\Курсовая.csproj.CopyComplete

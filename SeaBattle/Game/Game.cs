@@ -1,17 +1,6 @@
 ﻿using System;
 using System.Drawing;
 
-/*
- * Информация о корабрях
- * 0 - пусто (мимо)
- * 1 -  рядом корабль
- * 
- * Поле с точки зрения противника
- * 0 - неизвестно
- * 1 - пусто (мимо)
- * 2 - ранил
- * 3 - убил
- **/
 namespace Sea_Battle
 {
     public class Game
@@ -42,7 +31,7 @@ namespace Sea_Battle
                 }
             player = new Player();
             computer = new Player();
-            //setComputerField();
+            setComputerField();
             output.setText("");
         }
 
@@ -89,15 +78,24 @@ namespace Sea_Battle
 
         public void shotByComputer()
         {
-            State isShootedHere = State.missed; ;
+            State isShootedHere = State.missed;
             int x = 0, y = 0;
-            while (isShootedHere.Equals(State.missed) ||
-                isShootedHere.Equals(State.killed) ||
-                isShootedHere.Equals(State.hurt))
+            int[] points = player.findPoints();
+            if (points == null)
             {
-                x = r.Next(0, n);
-                y = r.Next(0, n);
-                isShootedHere = player.getHiddenCell(x, y);
+                while (isShootedHere.Equals(State.missed) ||
+                    isShootedHere.Equals(State.killed) ||
+                    isShootedHere.Equals(State.hurt))
+                {
+                    x = r.Next(0, n);
+                    y = r.Next(0, n);
+                    isShootedHere = player.getHiddenCell(x, y);
+                }
+            }
+            else
+            {
+                x = points[0];
+                y = points[1];
             }
             player.shoot(x, y);
             State t = player.isShipHere(x, y);
@@ -134,8 +132,8 @@ namespace Sea_Battle
             for (int i = 0; i < n; i++)
                 for (int j = 0; j < n; j++)
                 {
-                    output.setCellFor1(i, j, Convert.ToString(player.getCell(i, j)));
-                    output.setCellFor2(i, j, Convert.ToString(computer.getCell(i, j)));
+                    //output.setCellFor1(i, j, Convert.ToString(player.getCell(i, j)));
+                    //output.setCellFor2(i, j, Convert.ToString(computer.getCell(i, j)));
                     State t = player.getCell(i, j);
                     if (t.Equals(State.empty) || t.Equals(State.forbidden))
                         output.setColor1(i, j, empty);
